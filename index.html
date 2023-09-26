@@ -22,7 +22,7 @@
                 <p class="fs-1">Swarm!</p>
             </div>
             <div class="col-6 text-end">
-                <p class="fs-3">Hours left till dawn: <span id="hours-element">0</span></p>
+                <p class="fs-3">Attacks left till dawn: <span id="hours-element">0</span></p>
             </div>
         </div>
     </header>
@@ -34,10 +34,50 @@
     <footer class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <p class="text-white fs-3" id="bat-count-element">There are 0 bats that see the hunter.</p>
+                <p class="text-white fs-3" id="bat-hunter-element">There are 0 bats that see the hunter.</p>
+            </div>
+            <div class="col-12">
+                <p class="text-white fs-3" id="bat-healer-element">There are 0 bats that see the healer.</p>
             </div>
         </div>
     </footer>
+
+    <div class="container-fluid game-status-overlay d-none" id="win-element">
+        <div class="row align-items-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="text-center modal-focus-won">
+                    <p class="text-warning fs-1">You Win!!!</p>
+                    <p class="text-light">You successfully turned everyone into bats!</p>
+                    <p class="subtext">Game will now reset</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid game-status-overlay d-none" id="time-lose-element">
+        <div class="row align-items-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="text-center modal-focus-lost">
+                    <p class="text-danger fs-1">You Lost.</p>
+                    <p class="text-light">You ran out of time and burned up in the sunlight :(</p>
+                    <p class="subtext">Game will now reset</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid game-status-overlay d-none" id="hunter-lose-element">
+        <div class="row align-items-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="text-center modal-focus-lost">
+                    <p class="text-danger fs-1">You Lost.</p>
+                    <p class="text-light">You attempted to turn the hunter into a bat before you killed everyone else!
+                    </p>
+                    <p class="subtext">Game will now reset</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 

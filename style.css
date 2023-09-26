@@ -28,6 +28,62 @@ header>div>div>p {
     background-color: rgba(255, 0, 0, 0.484);
 }
 
+.game-status-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.game-status-overlay>div {
+    height: 100%;
+}
+
+.modal-focus-lost {
+    width: max-content;
+    padding: 1em;
+    background-color: black;
+    border: solid 2px rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 5px red;
+    animation: linear 2s lost-aura infinite;
+}
+
+@keyframes lost-aura {
+    0% {
+        box-shadow: 0 0 5px red;
+    }
+
+    50% {
+        box-shadow: 0 0 50px red;
+    }
+}
+
+.modal-focus-won {
+    width: max-content;
+    padding: 1em;
+    background-color: black;
+    border: solid 2px rgb(26, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(26, 255, 0);
+    animation: linear 2s won-aura infinite;
+}
+
+@keyframes won-aura {
+    0% {
+        box-shadow: 0 0 5px rgb(26, 255, 0);
+    }
+
+    50% {
+        box-shadow: 0 0 50px rgb(26, 255, 0);
+    }
+}
+
+.subtext {
+    color: grey;
+}
+
 .shake-anim {
     animation: linear .5s shake
 }
