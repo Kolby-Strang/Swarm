@@ -85,12 +85,12 @@ header>div>div>p {
 }
 
 .shake-anim {
-    animation: linear .5s shake
+    animation: linear .3s shake
 }
 
 @keyframes shake {
     10% {
-        transform: translate(.5em);
+        transform: translate(.35em);
         background-color: white;
     }
 
@@ -99,19 +99,19 @@ header>div>div>p {
     }
 
     30% {
-        transform: translate(-.5em);
+        transform: translate(-.35em);
     }
 
     50% {
-        transform: translate(.5em);
+        transform: translate(.35em);
     }
 
     70% {
-        transform: translate(-.5em);
+        transform: translate(-.35em);
     }
 
     90% {
-        transform: translate(.5em);
+        transform: translate(.35em);
     }
 
     100% {
