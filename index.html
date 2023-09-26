@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <!-- MDI ICONS -->
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style.css">
+    <title>Swarm</title>
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div class="row align-items-center text-white">
+            <div class="col-6 text-start">
+                <p class="fs-1">Swarm!</p>
+            </div>
+            <div class="col-6 text-end">
+                <p class="fs-3">Hours left till dawn: <span id="hours-element">0</span></p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row" id="locations-container"></div>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-white fs-3" id="bat-count-element">There are 0 bats that see the hunter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

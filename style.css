@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+}
+
+header {
+    border-bottom: solid 2px rgb(255, 242, 0);
+    padding: 1em;
+}
+
+header>div>div>p {
+    margin: 0;
+}
+
+.location-card {
+    text-align: center;
+    background-color: rgba(44, 44, 44, 0.452);
+    border: solid 2px rgb(255, 242, 0);
+    border-radius: 10px;
+    box-shadow: 0 3px 5px white;
+    padding: 1em;
+    transition: ease-in-out .5s;
+    display: block;
+}
+
+.location-card:hover {
+    border-color: red;
+    box-shadow: 0 3px 5px rgb(255, 0, 0);
+    background-color: rgba(255, 0, 0, 0.484);
+}
+
+.shake-anim {
+    animation: linear .5s shake
+}
+
+@keyframes shake {
+    10% {
+        transform: translate(.5em);
+        background-color: white;
+    }
+
+    25% {
+        background-color: rgba(44, 44, 44, 0.452);
+    }
+
+    30% {
+        transform: translate(-.5em);
+    }
+
+    50% {
+        transform: translate(.5em);
+    }
+
+    70% {
+        transform: translate(-.5em);
+    }
+
+    90% {
+        transform: translate(.5em);
+    }
+
+    100% {
+        transform: translate(0em);
+    }
+}
